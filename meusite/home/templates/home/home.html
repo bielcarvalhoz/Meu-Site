@@ -6,164 +6,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
+
+    <!-- Links -->
+
+    <link rel="stylesheet" href="{% static 'css/home.css' %}" />
+
 </head>
 
 <body>
-
-    <link rel="stylesheet" href="{% static 'css/grafico.css' %}"/>
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.1/dist/echarts.min.js"></script>
-    <script src="/js/grafico.js"></script>
-
-
-    <div class="box">
-        <button data-toggle="modal" data-target="#Modal_id_lucro_liquido" class="btn btn-primary">Abrir modal</button>
-    </div>    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Modal com gráfico aleatório -->
-    <div id="Modal_id_lucro_liquido" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title">Lucro líquido</h4>
-                </div>
-                <div class="modal-body" style="align-items: center;">
-                    <!-- <canvas id="myChart" width="300" height="300"></canvas> -->
-                    <div id="mai" style="width: 1030px; height:400px;"></div>
-                    <script type="text/javascript">
-                        // Initialize the echarts instance based on the prepared dom
-                        var myChart = echarts.init(document.getElementById('mai'));
-
-                        // Specify the configuration items and data for the chart
-                        var option = {
-                            legend: {},
-                            render: 'svg',
-                            tooltip: {
-                                trigger: 'axis',
-                            },
-                            toolbox: {
-                                right: '100px',
-                                show: true,
-                                feature: {
-                                    dataZoom: {
-                                        yAxisIndex: 'none'
-                                    },
-                                    dataView: {
-                                        readOnly: false,
-
-                                    },
-                                    magicType: {
-                                        type: ['line', 'bar'],
-
-                                    },
-                                    restore: {},
-                                    saveAsImage: { title: 'Salvar imagem' }
-                                }
-                            },
-                            grid: {
-                                left: '10%',
-                                top: 20,
-                                bottom: 30,
-                            },
-                            xAxis: {
-                                boundaryGap: false,
-                                axisTick: {
-                                    alignWithLabel: true,
-                                },
-                                type: 'category',
-                                data: ['Jan', 'Fev', 'Mar', 'Mai', 'Abr', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez']
-                            },
-                            yAxis: {
-                                show: false,
-                            },
-                            series: [
-                                {
-                                    name: 'Realizado',
-                                    data: [5345, 3453, 6345, 3453, 3134, 7565, 1242, 6457, 7567, 4643, 5464, 4353],
-                                    type: 'line',
-                                    smooth: true,
-                                },
-                                {
-                                    name: 'Orçado',
-                                    data: [1345, 3453, 1345, 9453, 3134, 2565, 1242, 6457, 9567, 4643, 5464, 2353],
-                                    type: 'line',
-                                    smooth: true,
-                                }
-                            ]
-                        }
-
-                        // Display the chart using the configuration items and data just specified.
-                        myChart.setOption(option);
-                    </script>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-                </div>
+    <header>
+        <nav>
+            <a class="logo">Meu Site</a>
+            <div class="mobile-menu"> 
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
-        </div>
-    </div>
-</body>
+            <ul class="nav-list">
+                <li><a href="https://github.com/Bielzz-JS">Github</a></li>
+                <li><a href="https://www.instagram.com/biel_cf1/">Instagram</a></li>
+                <li><a href="https://www.linkedin.com/in/gabriel-carvalho-fernandes00/">Linkedin</a></li>
+                <li><a id="id_discord">Discord</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
 
+    </main>
+
+    <!-- Scripts -->
+
+    <script src="{% static 'js/home.js' %}"></script>
+</body>
 </html>
