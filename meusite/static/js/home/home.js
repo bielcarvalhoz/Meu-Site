@@ -86,6 +86,29 @@ $(document).ready(function(){
         }
     }
 
+    document.querySelector("#id_discord").addEventListener('click', function(e){
+        
+        e.preventDefault();
+        
+        navigator.clipboard.writeText('Bielz#2942');
+                 
+        Toastify({
+            text: "Nick: Bielz#2942 copiado!",
+            duration: 3000,
+            gravity: "top", // `top` or `bottom`
+            position: "left", // `left`, `center` or `right`
+            offset: { 
+                y: 78 // vertical axis - can be a number or a string indicating unity. eg: '2em'
+            },
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+                color: 'var(--color-white)',
+                background: "linear-gradient(to right, var(--color-gradient-one), var(--color-gradient-two))",
+            },
+            onClick: function(){} // Callback after click
+          }).showToast();
+    })
+
     const mobileNavbar = new MobileNavbar(".mobile-menu", ".nav-list", ".nav-list li")
     mobileNavbar.init()
 

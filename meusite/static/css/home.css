@@ -1,16 +1,21 @@
 .lighttheme{
     --color-white: #000000;
     --color-bg: #bebebe;
+    --color-gradient-one: #ffffff;
+    --color-gradient-two: #bbbbbb;
 }
 
 .redtheme {
-
     --color-bg: #3e1212;
+    --color-gradient-one: #b90202;
+    --color-gradient-two: #500000;
 }
 
 :root {
-    --color-white: #fff;
+    --color-white: #ffffff;
     --color-bg: #23232e;
+    --color-gradient-one: #27005a;
+    --color-gradient-two: #14002b;
 } 
 
 * {
