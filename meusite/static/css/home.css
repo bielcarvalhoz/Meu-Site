@@ -5,6 +5,13 @@
     --color-gradient-two: #bbbbbb;
 }
 
+.razertheme{
+    --color-white: #48ff00;
+    --color-bg: #000000;
+    --color-gradient-one: #104400;
+    --color-gradient-two: #000000;
+}
+
 .redtheme {
     --color-bg: #3e1212;
     --color-gradient-one: #b90202;
@@ -17,6 +24,24 @@
     --color-gradient-one: #27005a;
     --color-gradient-two: #14002b;
 } 
+
+main {
+    background: url("../img/bg.png") no-repeat center center;
+    background-size: cover;
+    height: 92vh;
+}
+
+.razertheme main {
+    background: url("../img/bgrz.png") no-repeat center center;
+}
+
+.lighttheme main {
+    background: url("../img/bgw.png") no-repeat center center;
+}
+
+.redtheme main {
+    background: url("../img/bgr.png") no-repeat center center;
+}
 
 * {
     margin: 0;
@@ -60,20 +85,6 @@ nav {
     align-items: center;
     height: 8vh;
     width: 95vw;
-}
-
-main {
-    background: url("../img/bg.png") no-repeat center center;
-    background-size: cover;
-    height: 92vh;
-}
-
-.lighttheme main {
-    background: url("../img/bgw.png") no-repeat center center;
-}
-
-.redtheme main {
-    background: url("../img/bgr.png") no-repeat center center;
 }
 
 #mobileconfig {
