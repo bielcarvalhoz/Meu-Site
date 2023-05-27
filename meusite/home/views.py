@@ -22,7 +22,7 @@ FeriadosDoBrasil = FeriadosDoBrasil + FeriadosDiversos
 Feriados = []
 
 for date, name in sorted(FeriadosDoBrasil):
-    Feriados.append(f"{format(date, '%d/%m/%Y')} : {name}")  
+    Feriados.append(f"{format(date, '%d/%m/%Y')} : {name}")   
 
 
 
