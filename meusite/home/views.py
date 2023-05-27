@@ -24,11 +24,8 @@ Feriados = []
 for date, name in sorted(FeriadosDoBrasil):
     Feriados.append(f"{format(date, '%d/%m/%Y')} : {name}")   
 
-
-
-
-print(FeriadosDoBrasil)
-
+for date, name in sorted(FeriadosDoBrasil):
+    print(f"{format(date, '%d/%m/%Y')} -> {name}")  
 
 class TemplateHomeView(TemplateView):
     template_name = 'home/home.html'
