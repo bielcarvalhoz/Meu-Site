@@ -3,6 +3,8 @@
     --color-bg: #bebebe;
     --color-gradient-one: #ffffff;
     --color-gradient-two: #bbbbbb;
+    --color-bg-main-card: #bdbdbd;
+    --color-border-main-card: #5c5c5c;
 }
 
 .razertheme {
@@ -10,12 +12,16 @@
     --color-bg: #000000;
     --color-gradient-one: #104400;
     --color-gradient-two: #000000;
+    --color-bg-main-card: #000000bf;
+    --color-border-main-card: #93ff83; 
 }
 
 .redtheme {
     --color-bg: #3e1212;
     --color-gradient-one: #b90202;
     --color-gradient-two: #500000;
+    --color-bg-main-card: #300707;
+    --color-border-main-card: #6a0000;
 }
 
 :root {
@@ -23,6 +29,8 @@
     --color-bg: #23232e;
     --color-gradient-one: #27005a;
     --color-gradient-two: #14002b;
+    --color-bg-main-card: #1b1b3e;
+    --color-border-main-card: #6442ff;
 }
 
 main {
@@ -199,11 +207,11 @@ nav {
 }
 
 .main-card {
-    background: #1b1b3e;
+    background: var(--color-bg-main-card);
     width: 40%;
-    height: 60%;
+    height: fit-content;
     border-radius: 0.5rem;
-    border: #6442ff solid 1px;
+    border: var(--color-border-main-card) solid 1px;
     filter: drop-shadow(2px 4px 6px black);
 }
 
@@ -217,6 +225,18 @@ nav {
 .header-main-card span {
     font-size: 1.5rem;
     filter: drop-shadow(2px 4px 6px black);
+}
+
+.body-main-card {
+    padding: 1rem;
+}
+
+.main-holiday {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-bottom: 2%;
 }
 
 @media (max-width: 999px) {
@@ -260,6 +280,7 @@ nav {
         justify-content: space-around;
         transform: translateX(100%);
         transition: 0.3s ease-in;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 16px 15px;
     }
 
     .nav-list li {
